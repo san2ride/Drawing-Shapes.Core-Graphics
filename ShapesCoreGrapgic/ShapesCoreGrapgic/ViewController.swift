@@ -25,7 +25,11 @@ class ViewController: UIViewController {
         view.addSubview(myView)
     }
     
-
+    @IBAction func locationButtonPressed(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "LocationSegue", sender: nil)
+    }
+    
 
 }
 
